@@ -1,0 +1,21 @@
+﻿@model HomeViewModel
+
+@section styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+@section scripts {
+    <script type="text/javascript" src="~/js/home.js"></script>
+}
+
+@{
+    ViewData["Title"] = "Home";
+    ViewData["HeaderImg"] = "images/home.png";
+    ViewData["HeaderText"] = "Willkommen bei CopyPasteOnline";
+}
+
+<h3>Was möchten Sie tun ?</h3>
+<ul>
+    <li><a asp-controller="Write">Einen Text an die Zwischenablage senden</a></li>
+    <li><a asp-controller="Read">Einen Text aus der Zwischenablage holen</a></li>
+</ul>
